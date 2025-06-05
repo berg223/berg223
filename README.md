@@ -12,6 +12,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
 ## Hi there 👋 
 
  😄 I'm Cai Minjian 
@@ -20,10 +21,9 @@ Here are some ideas to get you started:
 
  💬 Email: xiaocairush@163.com
 
-
 ### 📊 Development Stats
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox&hide_border=true)
 
 <!-- START_PR_LIST -->
 ### 🚀 Recent PR on Apache Pulsar
