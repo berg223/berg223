@@ -6,6 +6,8 @@ on:
 
 jobs:
   fetch-prs:
+    permissions: # 添加权限声明（关键修复）
+      contents: write  # 授予代码推送权限
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
