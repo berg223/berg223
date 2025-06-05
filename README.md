@@ -15,15 +15,21 @@ Here are some ideas to get you started:
 
 ## Hi there 👋 
 
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox&hide_border=true">
+    <img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox&hide_border=true">
+</picture>
+
  😄 I'm Cai Minjian 
 
  🔭 I’m currently working on Apache Pulsar
 
  💬 Email: xiaocairush@163.com
 
-### 📊 Development Stats
+<br/>
+<br/>
+<br/>
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox&hide_border=true)
 
 <!-- START_PR_LIST -->
 ### 🚀 Recent PR on Apache Pulsar
