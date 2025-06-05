@@ -1,32 +1,37 @@
-name: Update PR List
+name: Update Recent PRs
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时更新
-  workflow_dispatch:
+    - cron: '0 */6 * * *'  # 每6小时自动更新
+  workflow_dispatch:       # 支持手动触发
 
 jobs:
-  update-prs:
+  fetch-prs:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch PR Data
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch PR data
         uses: actions/github-script@v6
         id: pr-data
         with:
           script: |
             const { data } = await github.rest.search.issuesAndPullRequests({
-              q: `author:${context.repo.owner} type:pr`
+              q: `author:${{ github.repository_owner }} type:pr is:public repo:apache/pulsar` # 限定Pulsar仓库
             });
             return data.items.slice(0, 5).map(pr => ({
               title: pr.title,
               url: pr.html_url,
               repo: pr.repository_url.split('/').pop(),
-              date: new Date(pr.created_at).toLocaleDateString()
+              date: new Date(pr.created_at).toLocaleDateString('zh-CN')
             }));
           result-encoding: json
 
       - name: Update README
         run: |
-          echo "### Recent PRs" > temp.md
-          echo "${{ steps.pr-data.outputs.result }}" | jq -r '.[] | "* [\(.title)](\(.url)) (\(.repo), \(.date))"' >> temp.md
-          sed -i '/START_SECTION:prs/,/END_SECTION:prs/!b;//!d' README.md
-          sed -i '/START_SECTION:prs/r temp.md' README.md
+          echo "### 🚀 Recent submitted PR" > temp.md
+          echo "${{ steps.pr-data.outputs.result }}" | jq -r '.[] | "- [\(.title)](\(.url)) (\(.repo), \(.date))"' >> temp.md
+          sed -i '/<!-- START_PR_LIST -->/,/<!-- END_PR_LIST -->/{//!d}' README.md
+          sed -i '/<!-- START_PR_LIST -->/r temp.md' README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
