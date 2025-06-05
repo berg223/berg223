@@ -1,0 +1,32 @@
+name: Update PR List
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # 每6小时更新
+  workflow_dispatch:
+
+jobs:
+  update-prs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch PR Data
+        uses: actions/github-script@v6
+        id: pr-data
+        with:
+          script: |
+            const { data } = await github.rest.search.issuesAndPullRequests({
+              q: `author:${context.repo.owner} type:pr`
+            });
+            return data.items.slice(0, 5).map(pr => ({
+              title: pr.title,
+              url: pr.html_url,
+              repo: pr.repository_url.split('/').pop(),
+              date: new Date(pr.created_at).toLocaleDateString()
+            }));
+          result-encoding: json
+
+      - name: Update README
+        run: |
+          echo "### Recent PRs" > temp.md
+          echo "${{ steps.pr-data.outputs.result }}" | jq -r '.[] | "* [\(.title)](\(.url)) (\(.repo), \(.date))"' >> temp.md
+          sed -i '/START_SECTION:prs/,/END_SECTION:prs/!b;//!d' README.md
+          sed -i '/START_SECTION:prs/r temp.md' README.md
