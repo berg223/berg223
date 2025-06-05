@@ -23,6 +23,7 @@ jobs:
               order: 'desc',
               per_page: 10
             });
+            echo(JSON.stringify(data))
             // 返回规范的JSON格式数据
             return JSON.stringify(data.items.slice(0, 5).map(pr => ({
               title: pr.title.replace(/"/g, '\\"'), // 转义双引号
