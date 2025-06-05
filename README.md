@@ -1,5 +1,8 @@
 ## Hi there 👋 I'm Cai Minjian
 
+### 📊 Development Stats
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox)
 <!--
 **berg223/berg223** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -21,6 +24,3 @@ Here are some ideas to get you started:
 - [[improve][broker] Enable concurrent processing of pending read Entries to avoid duplicate Reads](https://github.com/apache/pulsar/pull/24346) (pulsar, 2025/5/24)
 - [[fix][cli] Fix pulsar-shell cannot produce message with quotes and space](https://github.com/apache/pulsar/pull/24320) (pulsar, 2025/5/20)
 <!-- END_PR_LIST -->
-
-### 📊 Development Stats
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&include_all_commits=true)](https://github.com/berg223)
