@@ -20,14 +20,12 @@ jobs:
         with:
           script: |
             // 修复1: 直接获取结果数组
-            const results = await github.paginate(github.rest.search.issues, {
-              q: `author:${{ github.repository_owner }} type:pr repo:apache/pulsar`,
+            const results = await github.paginate(github.rest.search.issuesAndPullRequests, {
+              q: `author:${{ github.repository_owner }} type:pr is:public repo:apache/pulsar`,
               sort: 'updated',
               order: 'desc',
               per_page: 10
             });
-
-            console.log(JSON.stringify(results))
             
             // 修复2: 直接操作结果数组
             return JSON.stringify(results.map(pr => ({
