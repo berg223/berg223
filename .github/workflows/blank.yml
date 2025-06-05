@@ -12,7 +12,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
+      - name: Install dependencies
+        run: npm install octokit
       - name: Fetch PR data
         uses: actions/github-script@v6
         id: pr-data
