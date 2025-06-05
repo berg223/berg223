@@ -36,7 +36,7 @@ jobs:
           echo '${{ steps.pr-data.outputs.result }}' > prs.json
           
           # 生成Markdown格式的PR列表
-          echo "### 🚀 Recent submitted PR" > temp.md
+          echo "### 🚀 Recent PR on Apache Pulsar" > temp.md
           jq -r '.[] | "- [\(.title)](\(.url)) (\(.repo), \(.date))"' prs.json >> temp.md
           
           # 更新README.md的指定区域
