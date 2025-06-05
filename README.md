@@ -12,7 +12,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<h1 align="center">Hi there, I'm <a href="https://www.blackcater.win/" target="_blank">Cai Minjian</a> <img
+<h1 align="center">Hi there, I'm <a href="" target="_blank">Cai Minjian</a> <img
 src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32" /></h1>
 
 <picture>
