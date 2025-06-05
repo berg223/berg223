@@ -1,8 +1,3 @@
-## Hi there 👋 I'm Cai Minjian
-
-### 📊 Development Stats
-
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox)
 <!--
 **berg223/berg223** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -17,6 +12,19 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+## Hi there 👋 
+
+ 😄 I'm Cai Minjian 
+
+ 🔭 I’m currently working on Apache Pulsar
+
+ 💬 Email: xiaocairush@163.com
+
+
+### 📊 Development Stats
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&theme=gruvbox)
+
 <!-- START_PR_LIST -->
 ### 🚀 Recent PR on Apache Pulsar
 - [[fix][broker] fix unacked message count is zero when using exclusive subscription](https://github.com/apache/pulsar/pull/24376) (pulsar, 2025/6/3)
