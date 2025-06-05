@@ -12,14 +12,12 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-      - name: Install dependencies
-        run: npm install octokit
       - name: Fetch PR data
         uses: actions/github-script@v6
         id: pr-data
         with:
           script: |
-            const { data } = await octokit.rest.issues.search({
+            const { data } = await github.rest.search.issues({
               q: `author:${{ github.repository_owner }} type:pr is:public repo:apache/pulsar`
             });
             // 返回规范的JSON格式数据
