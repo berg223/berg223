@@ -20,7 +20,7 @@ jobs:
         with:
           script: |
             // 修复1: 直接获取结果数组
-            const results = await github.paginate(github.rest.issues.search, {
+            const results = await github.paginate(github.rest.search.issuesAndPullRequests, {
               q: `author:${{ github.repository_owner }} type:pr is:public repo:apache/pulsar`,
               sort: 'updated',
               order: 'desc',
