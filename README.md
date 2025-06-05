@@ -15,7 +15,11 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!-- START_PR_LIST -->
-<!-- 此处内容会被Action自动替换 -->
+### 🚀 Recent submitted PR
+- [[fix][broker] fix unacked message count is zero when using exclusive subscription](https://github.com/apache/pulsar/pull/24376) (pulsar, 2025/6/3)
+- [[fix][test] fix Flaky-test: ExtensibleLoadManagerImplTest.testLoadBalancerServiceUnitTableViewSyncer](https://github.com/apache/pulsar/pull/24371) (pulsar, 2025/6/2)
+- [[improve][broker] Enable concurrent processing of pending read Entries to avoid duplicate Reads](https://github.com/apache/pulsar/pull/24346) (pulsar, 2025/5/24)
+- [[fix][cli] Fix pulsar-shell cannot produce message with quotes and space](https://github.com/apache/pulsar/pull/24320) (pulsar, 2025/5/20)
 <!-- END_PR_LIST -->
 
 ### 📊 Development Stats
