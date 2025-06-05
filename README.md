@@ -38,3 +38,7 @@ Here are some ideas to get you started:
 - [[improve][broker] Enable concurrent processing of pending read Entries to avoid duplicate Reads](https://github.com/apache/pulsar/pull/24346) (pulsar, 2025/5/24)
 - [[fix][cli] Fix pulsar-shell cannot produce message with quotes and space](https://github.com/apache/pulsar/pull/24320) (pulsar, 2025/5/20)
 <!-- END_PR_LIST -->
+
+<!--START_SECTION:waka-->
+
+<!--END_SECTION:waka-->
