@@ -17,7 +17,7 @@ jobs:
         id: pr-data
         with:
           script: |
-            const { data } = await github.paginate(github.rest.search.issuesAndPullRequests, {
+            const { data } = await github.paginate(github.rest.issues.search, {
               q: `author:${{ github.repository_owner }} type:pr is:public repo:apache/pulsar`,
               sort: 'updated',
               order: 'desc',
