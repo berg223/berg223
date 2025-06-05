@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 <!-- START_PR_LIST -->
-### 🚀 Recent submitted PR
+### 🚀 Recent PR on Apache Pulsar
 - [[fix][broker] fix unacked message count is zero when using exclusive subscription](https://github.com/apache/pulsar/pull/24376) (pulsar, 2025/6/3)
 - [[fix][test] fix Flaky-test: ExtensibleLoadManagerImplTest.testLoadBalancerServiceUnitTableViewSyncer](https://github.com/apache/pulsar/pull/24371) (pulsar, 2025/6/2)
 - [[improve][broker] Enable concurrent processing of pending read Entries to avoid duplicate Reads](https://github.com/apache/pulsar/pull/24346) (pulsar, 2025/5/24)
