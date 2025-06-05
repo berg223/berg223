@@ -17,21 +17,38 @@ jobs:
         with:
           script: |
             const { data } = await github.rest.search.issuesAndPullRequests({
-              q: `author:${{ github.repository_owner }} type:pr is:public repo:apache/pulsar` # 限定Pulsar仓库
+              q: `author:${{ github.repository_owner }} type:pr is:public repo:apache/pulsar`
             });
-            return data.items.slice(0, 5).map(pr => ({
-              title: pr.title,
+            // 返回规范的JSON格式数据
+            return JSON.stringify(data.items.slice(0, 5).map(pr => ({
+              title: pr.title.replace(/"/g, '\\"'), // 转义双引号
               url: pr.html_url,
               repo: pr.repository_url.split('/').pop(),
               date: new Date(pr.created_at).toLocaleDateString('zh-CN')
-            }));
-          result-encoding: json
+            })));
+          result-encoding: string
 
       - name: Update README
         run: |
+          # 创建临时JSON文件
+          echo '${{ steps.pr-data.outputs.result }}' > prs.json
+          
+          # 生成Markdown格式的PR列表
           echo "### 🚀 Recent submitted PR" > temp.md
-          echo "${{ steps.pr-data.outputs.result }}" | jq -r '.[] | "- [\(.title)](\(.url)) (\(.repo), \(.date))"' >> temp.md
+          jq -r '.[] | "- [\(.title)](\(.url)) (\(.repo), \(.date))"' prs.json >> temp.md
+          
+          # 更新README.md的指定区域
           sed -i '/<!-- START_PR_LIST -->/,/<!-- END_PR_LIST -->/{//!d}' README.md
           sed -i '/<!-- START_PR_LIST -->/r temp.md' README.md
+          
+          # 清理临时文件
+          rm prs.json temp.md
+          
+          # 提交更改
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update recent PR list"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
