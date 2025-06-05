@@ -14,10 +14,9 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-### 🚀 Recent Activity
-
-<!-- START_SECTION:prs -->
-<!-- END_SECTION:prs -->
+<!-- START_PR_LIST -->
+<!-- 此处内容会被Action自动替换 -->
+<!-- END_PR_LIST -->
 
 ### 📊 Development Stats
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=berg223&show_icons=true&include_all_commits=true)](https://github.com/berg223)
