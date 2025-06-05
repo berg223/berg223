@@ -40,5 +40,4 @@ Here are some ideas to get you started:
 <!-- END_PR_LIST -->
 
 <!--START_SECTION:waka-->
-
 <!--END_SECTION:waka-->
