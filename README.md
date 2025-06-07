@@ -39,7 +39,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 - [[fix][cli] Fix pulsar-shell cannot produce message with quotes and space](https://github.com/apache/pulsar/pull/24320) (pulsar, 2025/5/20)
 <!-- END_PR_LIST -->
 
-### :bar_chart: [Coding time in the last month](https://github.com/muety/wakapi)
+### :bar_chart: Coding time in the last month
 <!--START_SECTION:waka-->
 
 ```txt
