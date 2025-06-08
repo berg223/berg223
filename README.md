@@ -42,7 +42,11 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 ### :bar_chart: Coding time in the last month
 <!--START_SECTION:waka-->
 
-```txt
+```java
+From: 09 May 2025 - To: 08 June 2025
+
+Total Time: 7 hrs 48 mins
+
 Java   7 hrs 43 mins   🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟨   98.80 %
 XML    5 mins          🟨⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜   01.20 %
 ```
