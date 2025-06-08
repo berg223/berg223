@@ -1,7 +1,7 @@
 name: Update Recent PRs
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时自动更新
+    - cron: '0 */24 * * *'  # 每6小时自动更新
   workflow_dispatch:       # 支持手动触发
 
 jobs:
