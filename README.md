@@ -33,8 +33,8 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 
 <!-- START_PR_LIST -->
 ### 🚀 Recent PR on Apache Pulsar
-- [PIP-426: Enhanced Consumer Throttling and Unacknowledged Message Tracking for Exclusive and Failover Subscriptions](https://github.com/apache/pulsar/pull/24400) (pulsar, 2025/6/9)
-- [[improve][broker] Enable Consumer Throttling and Accurate Unacknowledged Message Tracking for Exclusive and Failover Subscriptions](https://github.com/apache/pulsar/pull/24396) (pulsar, 2025/6/8)
+- [[improve][pip] PIP-426: Enhanced Consumer Throttling and Unacknowledged Message Tracking for Exclusive and Failover Subscriptions](https://github.com/apache/pulsar/pull/24400) (pulsar, 2025/6/9)
+- [[feat][pip] PIP-426: Enable Consumer Throttling and Accurate Unacknowledged Message Tracking for Exclusive and Failover Subscriptions](https://github.com/apache/pulsar/pull/24396) (pulsar, 2025/6/8)
 - [[fix][broker] fix unacked message count is zero when using exclusive subscription](https://github.com/apache/pulsar/pull/24376) (pulsar, 2025/6/3)
 - [[fix][test] fix Flaky-test: ExtensibleLoadManagerImplTest.testLoadBalancerServiceUnitTableViewSyncer](https://github.com/apache/pulsar/pull/24371) (pulsar, 2025/6/2)
 - [[improve][broker] Enable concurrent processing of pending read Entries to avoid duplicate Reads](https://github.com/apache/pulsar/pull/24346) (pulsar, 2025/5/24)
