@@ -44,7 +44,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <!--START_SECTION:waka-->
 
 ```java
-From: 18 May 2025 - To: 17 June 2025
+From: 19 May 2025 - To: 18 June 2025
 
 Total Time: 25 hrs 37 mins
 
