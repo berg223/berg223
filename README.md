@@ -44,7 +44,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <!--START_SECTION:waka-->
 
 ```java
-From: 20 November 2025 - To: 20 December 2025
+From: 21 November 2025 - To: 21 December 2025
 
 Total Time: 0 secs
 
