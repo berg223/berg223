@@ -44,7 +44,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <!--START_SECTION:waka-->
 
 ```java
-From: 28 February 2026 - To: 30 March 2026
+From: 01 March 2026 - To: 31 March 2026
 
 Total Time: 0 secs
 
