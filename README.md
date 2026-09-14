@@ -44,7 +44,7 @@ src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32
 <!--START_SECTION:waka-->
 
 ```java
-From: 12 August 2026 - To: 11 September 2026
+From: 13 August 2026 - To: 12 September 2026
 
 Total Time: 44 mins
 
